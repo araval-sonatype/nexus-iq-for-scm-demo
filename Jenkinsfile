@@ -1,9 +1,9 @@
 pipeline {
   agent {
-    //docker {
-      // Docker image with node and git installed
-    //  image 'tarampampam/node:13-alpine'
-  //  }
+    docker {
+       Docker image with node and git installed
+      image 'tarampampam/node:13-alpine'
+  }
   }
   stages {
     stage('Build') {
